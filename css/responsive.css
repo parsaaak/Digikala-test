@@ -1,0 +1,160 @@
+/* desktop small screens */
+@media (1300px>width>=1020px) {
+.header-menu {
+  font-size: 11.5px;
+  padding-inline: 15px;
+}
+.digi-menu-right a {
+  padding-inline: 8px;
+  padding-bottom: 7px;
+}
+.digi-menu-right a:nth-child(1) {
+  position: relative;
+  color: #3f4064;
+  font-size: 16px;
+  letter-spacing: -0.5px;
+  padding-right: 0;
+}
+.jomle-deli {
+display: none;
+}
+.banner-carousel .splide__arrows .splide__arrow--prev{
+ margin-top: 130px;
+ margin-left: 84%;
+}
+}
+/* ////////////////////////////////////////////// */
+/* tablet and mobile all */
+@media (1020px>width>0px) {
+.top-header{
+position: relative;
+top: unset;
+}
+.desktop-digi-icon{
+display: none;
+}
+.header-container{
+position: sticky; 
+top: 0;
+}
+.header-nav{
+margin-top: unset;
+padding: 8px;
+}
+.Digi-navbar-left{
+ display: none;
+}
+.Digi-navbar-right{
+width: 100%;
+}
+.search-box{
+width: 100%;
+}
+.mobile-search-box-digi-icon{
+display: unset;
+width: 90px;
+position: absolute;
+right: 110px;
+}
+.header-menu {
+ display: none;
+}
+.header-menu-mobile-container{
+display: unset;
+position: fixed;
+bottom: 0;
+background-color: #fff;
+border-top: solid 1.5px #d0d0d0;
+}
+.header-menu-mobile-container div{
+color:rgb(129, 133, 139) ;
+font-size: 11px;
+padding-block: 4px;
+}
+.header-menu-mobile-container div div:nth-child(1){
+color: #000;
+}
+.splide__arrows{
+display: none;
+}
+.banner-carousel .splide__arrows{
+  display: unset;
+}
+
+}
+/* ////////////////////////////////////////////// */
+/* tablet */
+@media (1020px>width>500px) {
+.review-carousel{
+width: 100%;
+}
+.banner-carousel .splide__arrows{
+  display: none;
+}
+.digikala-features{
+gap: 30px 90px;
+}
+.digikala-features a{
+width: 97px;
+}
+}
+/* ////////////////////////////////////////////// */
+/* mobile */
+@media (width<500px) {
+.review-carousel{
+width: 95%;
+}
+.top-header img{
+height: 35px;
+}
+.splide__list{
+height: 140px;
+}
+.splide__slide p{
+ font-size: 10px;
+}
+.banner-carousel{
+height: 268px;
+}
+.banner-carousel .splide__slide img:first-child{
+display: none;
+}
+.banner-carousel .splide__slide img:last-child{
+display: unset;
+height: 268px;
+}
+.banner-carousel .splide__track{
+height: 268px;
+}
+.banner-carousel .splide__arrows .splide__arrow--prev{
+ margin-top: 75px;
+ margin-left: 58%;
+}
+.banner-carousel .splide__arrows .splide__arrow--next{
+ margin-top: 75px;
+ right: 0px;
+}
+.digikala-features{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 40px 0px;
+}
+.digikala-features a{
+width: 25%;
+}
+}
+
+/* ///////////////////////////////////
+///////////////////////////////////
+///////////////////////////////////
+/////////////////////////////////// */
+/* for specific iphones */
+@media (450px>width>380px){
+  .banner-carousel .splide__arrows .splide__arrow--prev{
+ margin-left: 63%;
+}
+}
+
+
+

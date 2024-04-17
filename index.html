@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>فروشگاه اینترنتی دیجیکالا</title>
+    <!-- css stylesheets -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bs/bootstrap.css" />
+    <link rel="stylesheet" href="css/animation.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <!-- header section -->
+    <div class="container-fluid top-header">
+      <img class="w-100" src="image/top-header2.gif" alt="" />
+    </div>
+    <div class="container-fluid bg-white header-container">
+      <div class="container header-nav d-flex justify-content-between">
+        <div class="Digi-navbar-right d-flex align-items-center">
+          <img
+            class="desktop-digi-icon"
+            src="image/digikala-nav-logo.svg"
+            alt=""
+          />
+          <div class="search-box d-flex align-items-center">
+            <a href=""><img src="image/search-box-icon.svg" alt="" /></a>
+            <input
+              id="search-box-desktop"
+              class="d-none d-lg-inline"
+              type="search"
+              placeholder="جستجو"
+            />
+            <!-- search box for mobile -->
+            <input
+              class="d-inline d-lg-none"
+              type="search"
+              placeholder="جستجو در "
+            />
+            <img
+              class="mobile-search-box-digi-icon"
+              src="image/digi-logo-mobile-search-box.svg"
+              alt=""
+            />
+            <!-- end of search box for mobile -->
+          </div>
+        </div>
+        <div
+          class="Digi-navbar-left justify-content-center align-items-center gap-3 position-relative"
+        >
+        <span onclick="forReviewcarousel()">
+          <!-- the span and the onclick of it is just for review carousel z-index problem -->
+          <button id="button" onclick="userOptions()">
+            <img src="image/user-svg.svg" alt="" />
+          </button>
+          </span>
+          <!-- user option for desktop -->
+          <ul id="user-options-toggle" class="user-options bg-white">
+            <a href=""
+              ><li class="d-flex justify-content-between">
+                پارسا کریمی<span
+                  ><img src="image/left-arrow.svg" alt=""
+                /></span></li
+            ></a>
+            <hr />
+            <a href=""
+              ><li>
+                <img class="ms-3" src="image/digi-club-svg.svg" alt="" />دیجی
+                کلاب<span style="margin-right: 95px"
+                  >8 <span>امتیاز</span></span
+                >
+              </li></a
+            >
+            <hr />
+            <a href=""
+              ><li>
+                <img class="ms-3" src="image/star-svg.svg" alt="" />دیجی
+                پلاس<span
+                  >خرید اشتراک<img src="image/left-arrow-purple.svg" alt=""
+                /></span></li
+            ></a>
+            <hr />
+            <a href=""
+              ><li>
+                <img class="ms-3" src="image/bag-svg.svg" alt="" /> سفارش ها
+              </li></a
+            >
+            <hr />
+            <a href=""
+              ><li>
+                <img class="ms-3" src="image/heart-svg.svg" alt="" />لیست ها
+              </li></a
+            >
+            <hr />
+            <a href=""
+              ><li>
+                <img class="ms-3" src="image/comment-svg.svg" alt="" />دیدگاه ها
+              </li></a
+            >
+            <hr />
+            <a href=""
+              ><li>
+                <img class="ms-3" src="image/ringbell-svg.svg" alt="" />پیغام ها
+              </li></a
+            >
+            <hr />
+            <a href=""
+              ><li>
+                <img class="ms-3" src="image/exit-svg.svg" alt="" />خروج از حساب
+                کاربری
+              </li></a
+            >
+          </ul>
+          <!-- end of user option -->
+          <span></span>
+          <a href=""><img src="image/shop-svg.svg" alt="" /></a>
+        </div>
+      </div>
+      <div class="container header-menu">
+        <div class="digi-menu-right">
+          <!-- dropdown menu category -->
+          <a id="menu-categoryy" class="menu-category" href=""
+            ><img src="image/menu-category-icon.svg" alt="" />دسته بندی کالاها
+            <div id="kir" class="menu-dropdown bg-white">
+              <div class="for-scroll-direction">
+              <!-- dropdown item -->
+              <ul>
+                <li class="mobile-category">
+                  <img src="image/dropdown-mobile-icon.svg" alt="" />موبایل
+                  <div class="mobile-dropdown">
+                    <div class="for-scroll-direction">
+                    
+                    <h5>
+                      همه محصولات موبایل<img
+                        src="image/dropdown-left-arrow-blue.svg"
+                        alt=""
+                      />
+                    </h5>
+                    <div class="d-flex">
+                      <ul>
+                        <h3>
+                          برندهای مختلف گوشی موبایل<img
+                            src="image/dropdown-left-arrow-BLACK.svg"
+                            alt=""
+                          />
+                        </h3>
+                        <li>گوشی آیفون</li>
+                        <li>گوشی سامسونگ</li>
+                        <li>گوشی شیاءومی</li>
+                        <li>گوشی نوکیا</li>
+                        <li>گوشی ریلمی</li>
+                        <li>گوشی آنر</li>
+                        <li>گوشی موتورولا</li>
+                        <li>گوشی ناتینگ فون</li>
+                        <li>گوشی جی پلاس</li>
+                        <li>گوشی هواوی</li>
+                        <li>گوشی جی ال ایکس</li>
+                        <li>گوشی جنرال لوکس</li>
+                        <li>گوشی داریا</li>
+                        <li>گوشی گوگل</li>
+                        <li>گوشی اوپو</li>
+                        <li>گوشی ارد</li>
+                        <li>گوشی وان پلاس</li>
+                        <li>گوشی موبایل رنسو</li>
+                      </ul>
+                      <ul>
+                        <h3>
+                          گوشی براساس قیمت<img
+                            src="image/dropdown-left-arrow-BLACK.svg"
+                            alt=""
+                          />
+                        </h3>
+                        <li>گوشی موبایل ارزان</li>
+                        <li>گوشی موبایل قسطی</li>
+                        <li>گوشی تا 2 میلیون تومان</li>
+                        <li>گوشی تا 5 میلیون تومان</li>
+                        <li>گوشی موبایل تا 7 میلیون تومان</li>
+                        <li>گوشی موبایل تا 15 میلیون تومان</li>
+                        <li>گوشی بالای 15 میلیون تومان</li>
+                        <ul>
+                          <h3>
+                            گوشی براساس عملکرد<img
+                              src="image/dropdown-left-arrow-BLACK.svg"
+                              alt=""
+                            />
+                          </h3>
+                          <li>گوشی گیمینگ</li>
+                          <li>گوشی 5g</li>
+                          <li>گوشی دکمه ای</li>
+                          <li>گوشی ضد آب</li>
+                          <li>گوشی مناسب عکاسی</li>
+                          <li>گوشی میان رده</li>
+                          <li>گوشی اقتصادی</li>
+                          <li>گوشی دانش آموزی</li>
+                          <li>گوشی پرچمدار</li>
+                          <li>دو سیمکارت</li>
+                        </ul>
+                      </ul>
+                      <ul>
+                        <h3>
+                          گوشی براساس عملکرد<img
+                            src="image/dropdown-left-arrow-BLACK.svg"
+                            alt=""
+                          />
+                        </h3>
+                        <li>گوشی گیمینگ</li>
+                        <li>گوشی 5g</li>
+                        <li>گوشی دکمه ای</li>
+                        <li>گوشی ضد آب</li>
+                        <li>گوشی مناسب عکاسی</li>
+                        <li>گوشی میان رده</li>
+                        <li>گوشی اقتصادی</li>
+                        <li>گوشی دانش آموزی</li>
+                        <li>گوشی پرچمدار</li>
+                        <li>دو سیمکارت</li>
+                        <ul>
+                          <h3>
+                            گوشی براساس عملکرد<img
+                              src="image/dropdown-left-arrow-BLACK.svg"
+                              alt=""
+                            />
+                          </h3>
+                          <li>گوشی گیمینگ</li>
+                          <li>گوشی 5g</li>
+                          <li>گوشی دکمه ای</li>
+                          <li>گوشی ضد آب</li>
+                          <li>گوشی مناسب عکاسی</li>
+                          <li>گوشی میان رده</li>
+                          <li>گوشی اقتصادی</li>
+                          <li>گوشی دانش آموزی</li>
+                          <li>گوشی پرچمدار</li>
+                          <li>دو سیمکارت</li>
+                        </ul>
+                      </ul>
+
+                      <h2 class="jomle-deli">
+                        بقیه منو رو دیگه حال ندارم بزنم خودتون بپذیرید دیگه
+                        😁😁
+                      </h2>
+                    </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <img src="image/dropdown-laptop-icon.svg" alt="" />کالای
+                  دیجیتال
+                </li>
+                <li>
+                  <img src="image/dropdown-sofa-icon.svg" alt="" />خانه و
+                  آشپزخانه
+                </li>
+                <li>
+                  <img
+                    src="image/dropdown-electricstuff-icon.svg"
+                    alt=""
+                  />لوازم خانگی برقی
+                </li>
+                <li>
+                  <img src="image/dropdown-cloth-icon.svg" alt="" />مد و پوشاک
+                </li>
+                <li>
+                  <img src="image/dropdown-gold-icon.svg" alt="" />ساعت، طلا و
+                  جواهرات
+                </li>
+                <li>
+                  <img src="image/dropdown-health-icon.svg" alt="" />زیبایی و
+                  سلامت
+                </li>
+                <li>
+                  <img src="image/dropdown-giftcard-icon.svg" alt="" />کارت هدیه
+                </li>
+                <li>
+                  <img
+                    src="image/dropdown-supermarket-icon.svg"
+                    alt=""
+                  />کالاهای سوپرمارکتی
+                </li>
+                <li>
+                  <img src="image/dropdown-pencil-icon.svg" alt="" />کتاب، لوازم
+                  تحریر و هنر
+                </li>
+                <li>
+                  <img src="image/dropdown-kid-icon.svg" alt="" />اسباب بازی،
+                  کودک و نوزاد
+                </li>
+                <li>
+                  <img src="image/dropdown-tools-icon.svg" alt="" />ابزار آلات و
+                  تجهیزات
+                </li>
+                <li>
+                  <img src="image/dropdown-car-icon.svg" alt="" />خودرو و
+                  موتورسیکلت
+                </li>
+                <li>
+                  <img src="image/dropdown-camp-icon.svg" alt="" />ورزش و سفر
+                </li>
+                <li>
+                  <img
+                    src="image/dropdown-local-products-icon.svg"
+                    alt=""
+                  />محصولات بومی و محلی
+                </li>
+              </ul>
+
+              <!-- end of dropdown item    -->
+              </div>
+            </div></a
+          >
+          <!-- end of dropdown menu category -->
+          <span><img src="image/menu-seperetor-line.svg" alt="" /></span>
+          <a href=""
+            ><img src="image/menu-shegeftangizha-icon.svg" alt="" />شگفت
+            انگیزها</a
+          >
+          <a href=""
+            ><img src="image/menu-supermarket-icon.svg" alt="" />سوپرمارکت</a
+          >
+          <a href=""
+            ><img src="image/menu-giftcard-icon.svg" alt="" />کارت هدیه</a
+          >
+          <a href=""
+            ><img src="image/menu-mostsell-icon.svg" alt="" />پرفروش ترین ها</a
+          >
+          <a href=""
+            ><img src="image/menu-discount-icon.svg" alt="" />تخفیف ها و پیشنهاد
+            ها</a
+          >
+          <span><img src="image/menu-seperetor-line.svg" alt="" /></span>
+          <a href="">سوالی دارید؟</a>
+          <a href="">در دیجیکالا بفروشید!</a>
+        </div>
+
+        <div class="digi-menu-left">
+          <a href=""
+            ><img src="image/menu-location-icon.svg" alt="" />ارسال به تهران،
+            مجیدیه</a
+          >
+        </div>
+      </div>
+        <!-- mobile menu -->
+        <div class="container header-menu-mobile-container">
+        <div class="header-menu-mobile d-flex justify-content-around align-items-center ">
+          <div class="text-center ">
+            <img src="image/mobile-menu-home-icon.svg" alt="">
+            <p>خانه</p>
+          </div>
+           <div class="text-center ">
+            <img src="image/mobile-menu-category-icon.svg" alt="">
+            <p>دسته بندی</p>
+          </div>
+          <div class="text-center ">
+            <img src="image/mobile-menu-shop-icon.svg" alt="">
+            <p>سبد خرید</p>
+          </div>  
+          <div class="text-center ">
+            <img src="image/mobile-menu-user-icon.svg" alt="">
+            <p>دیجیکالای من</p>
+          </div>
+          
+        </div>
+        </div>
+    </div>
+    <!-- end of header -->
+     <!-- review carousel -->
+     <section id="review-carousel1" dir="ltr" class="splide review-carousel container mt-3 bg-white " aria-label="Custom Arrows Example">
+  <div class="splide__arrows">
+		<button class="splide__arrow splide__arrow--prev">
+			<img src="image/carousel-arrow-left.svg" alt="">
+		</button>
+		<button class="splide__arrow splide__arrow--next">
+			<img src="image/carousel-arrow-right.svg" alt="">
+		</button>
+  </div>
+   
+  <div class="splide__track">
+		<ul class="splide__list ">
+			<li class="splide__slide w-auto text-center">
+       <img src="image/people1.svg" alt="">
+      <p>هندزفری اقتصادی</p>
+      </li>
+			<li class="splide__slide w-auto text-center">
+       <img src="image/people2.svg" alt="">
+      <p>سووشون یک رمان ماندگار و خواندنی</p>
+      </li>
+			<li class="splide__slide w-auto text-center">
+       <img src="image/people3.svg" alt="">
+      <p>ماشین عقب کش با سرعت بالا</p>
+      </li>
+			<li class="splide__slide w-auto text-center">
+       <img src="image/people4.svg" alt="">
+      <p>اصن خوراک گیمراس</p>
+      </li>
+			<li class="splide__slide w-auto text-center">
+       <img src="image/people5.svg" alt="">
+      <p>لپتاپ دانشجویی!</p>
+      </li>
+			<li class="splide__slide w-auto text-center">
+       <img src="image/people2.svg" alt="">
+      <p>مخصوص چایی های دونفره</p>
+      </li>
+			<li class="splide__slide w-auto text-center">
+       <img src="image/people4.svg" alt="">
+      <p>عطر جیبی با رایحه دلخواه شما</p>
+      </li>
+			<li class="splide__slide w-auto text-center">
+       <img src="image/people1.svg" alt="">
+      <p>شکر قهوه ای یا سفید؟؟</p>
+      </li>
+			<li class="splide__slide w-auto text-center">
+       <img src="image/people3.svg" alt="">
+      <p>عجب دفتری!!</p>
+      </li>
+			<li class="splide__slide w-auto text-center">
+       <img src="image/people5.svg" alt="">
+      <p>هندزفری اقتصادی</p>
+      </li>
+			<li class="splide__slide w-auto text-center">
+       <img src="image/people2.svg" alt="">
+      <p>سووشون یک رمان ماندگار و خواندنی</p>
+      </li>
+			<li class="splide__slide w-auto text-center">
+       <img src="image/people4.svg" alt="">
+      <p>ماشین عقب کش با سرعت بالا</p>
+      </li>
+			<li class="splide__slide w-auto text-center">
+       <img src="image/people5.svg" alt="">
+      <p>اصن خوراک گیمراس</p>
+      </li>
+			<li class="splide__slide w-auto text-center">
+       <img src="image/people1.svg" alt="">
+      <p>لپتاپ دانشجویی!</p>
+      </li>
+			<li class="splide__slide w-auto text-center">
+       <img src="image/people3.svg" alt="">
+      <p>مخصوص چایی های دونفره</p>
+      </li>
+			<li class="splide__slide w-auto text-center">
+       <img src="image/people5.svg" alt="">
+      <p>عطر جیبی با رایحه دلخواه شما</p>
+      </li>
+			<li class="splide__slide w-auto text-center">
+       <img src="image/people2.svg" alt="">
+      <p>ماشین عقب کش با سرعت بالا</p>
+      </li>
+			<li class="splide__slide w-auto text-center">
+       <img src="image/people4.svg" alt="">
+      <p>اصن خوراک گیمراس</p>
+      </li>
+			<li class="splide__slide w-auto text-center">
+       <img src="image/people5.svg" alt="">
+      <p>عجب دفتری!!</p>
+      </li>
+			<li class="splide__slide w-auto text-center">
+       <img src="image/people3.svg" alt="">
+      <p>شکر قهوه ای یا سفید؟؟</p>
+      </li>
+			<li class="splide__slide w-auto text-center">
+       <img src="image/people2.svg" alt="">
+      <p>عطر جیبی با رایحه دلخواه شما</p>
+      </li>
+			<li class="splide__slide w-auto text-center">
+       <img src="image/people5.svg" alt="">
+      <p>هندزفری اقتصادی</p>
+      </li>
+
+		</ul>
+  </div>
+</section>
+   <!-- end of review carousel -->
+
+       <!-- banner carousel -->
+     
+     <section id="banner-carousel2" dir="ltr" class="splide banner-carousel mt-lg-3   container bg-white " aria-label="Custom Arrows Example">
+
+  <div class="splide__arrows"> 
+		<button class="splide__arrow splide__arrow--prev">
+			<img src="image/carousel-arrow-left.svg" alt="">
+		</button>
+		<button class="splide__arrow splide__arrow--next">
+			<img src="image/carousel-arrow-right.svg" alt="">
+		</button>
+  </div>
+   
+  <div class="splide__track">
+		<ul class="splide__list ">
+			<li class="splide__slide ">
+      <img src="image/baner-carousel-1.gif" alt="...">
+      <img src="image/baner-carousel-mobile-1.gif" alt="...">
+      </li>
+			<li class="splide__slide ">
+      <img src="image/baner-carousel-2.webp" alt="...">
+      <img src="image/baner-carousel-mobile-2.webp" alt="...">
+      </li>
+			<li class="splide__slide">
+      <img src="image/baner-carousel-3.webp" alt="...">
+      <img src="image/baner-carousel-mobile-3.webp" alt="...">
+      </li>
+			<li class="splide__slide">
+      <img src="image/baner-carousel-4.webp" alt="...">
+      <img src="image/baner-carousel-mobile-4.webp" alt="...">
+
+      </li>
+			<li class="splide__slide">
+      <img src="image/baner-carousel-5.webp" alt="...">
+      <img src="image/baner-carousel-mobile-5.webp" alt="...">
+
+      </li>
+			<li class="splide__slide">
+      <img src="image/baner-carousel-6.webp" alt="...">
+      <img src="image/baner-carousel-mobile-6.webp" alt="...">
+
+      </li>
+			<li class="splide__slide">
+      <img src="image/baner-carousel-7.webp" alt="...">
+      <img src="image/baner-carousel-mobile-7.webp" alt="...">
+
+      </li>
+			<li class="splide__slide">
+      <img src="image/baner-carousel-8.webp" alt="...">
+       <img src="image/baner-carousel-mobile-8.webp" alt="...">
+      </li>
+		</ul>
+  </div>
+
+</section>
+     <!-- end of banner carousel -->
+        <!-- digikala-features -->
+       <div class="container digikala-features">
+        <a href="">
+          <img src="image/digikala-jet-icon.svg" alt="">
+          <p>دیجی‌کالا جت</p>
+        </a>
+        <a href="">
+          <img src="image/digipay-icon.svg" alt="">
+          <p>دیجی‌پی</p>
+        </a>
+        <a href="">
+          <img src="image/digistyle-icon.svg" alt="">
+          <p>حراج دیجی استایل</p>
+        </a>
+        <a href="">
+          <img src="image/digikala-feature-supermarket-icon.svg" alt="">
+          <p>خرید سوپرمارکتی</p>
+        </a>
+        <a href="">
+          <img src="image/digikala-feature-mobile-karkardeh-icon.svg" alt="">
+          <p>موبایل کارکرده</p>
+        </a>
+        <a href="">
+          <img src="image/digikala-feature-kharid-cheki.svg" alt="">
+          <p>خرید چکی</p>
+        </a>
+        <a href="">
+          <img src="image/digikala-feature-jayezeh-digiplus.svg" alt="">
+          <p>جایزه دیجی‌پلاس</p>
+        </a>
+        <a href=""  data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <img src="image/digikala-feature-more-option-icon.svg" alt="">
+          <p>بیشتر</p>
+        </a>
+         <!-- Modal -->
+         <div  class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+           <div class="modal-dialog">
+             <div class="modal-content">
+               <div class="modal-header ">
+                 <!-- <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1> -->
+                 <button style="margin-right:90%;" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body">
+                 ...
+               </div>
+               <div class="modal-footer">
+                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                 <button type="button" class="btn btn-primary">Save changes</button>
+               </div>
+             </div>
+           </div>
+         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       </div>
+        <!-- end of digikala-features -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <!-- swiper carousel -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.bundle.js"></script>
+    <!-- .....main-js...... -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
