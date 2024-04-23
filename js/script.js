@@ -43,6 +43,14 @@ var splide = new Splide("#special-offers-carousel3", {
   perPage: 7,
   perMove: 1,
   gap: "0.15rem",
+   breakpoints: {
+    640: {
+      perPage: 2,
+    },
+    480: {
+      perPage: 1,
+    },
+  },
 });
 splide.mount();
 

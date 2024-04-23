@@ -1,8 +1,8 @@
 @font-face {
-  font-family: iran-yekan;
-  src: url(/fonts/iran_yekan_web_regular.ttf);
-  src: url(/fonts/iran_yekan_web_regular.woff);
-  src: url(/fonts/iran_yekan_web_regular.woff2);
+ font-family: "iranyekan";
+  src: url(/fonts/iranyekan.ttf);
+  src: url(/fonts/iranyekanr.woff);
+  src: url(/fonts/iranyekan.woff2);
 }
 /* prepration */
 html,
@@ -16,7 +16,7 @@ body:root {
 }
 body {
   margin: 0px;
-  font-family: iran-yekan;
+  font-family: "iranyekan";
 }
 a {
   text-decoration: none;
@@ -212,8 +212,7 @@ button {
 .menu-dropdown {
   display: none;
   position: absolute;
-  top: 0;
-  margin-top: 32px;
+  top: 27.5px;
   width: 1120px;
   height: 68vh;
   overflow-y: scroll;

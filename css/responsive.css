@@ -1,3 +1,9 @@
+@font-face {
+ font-family: "iranyekan";
+  src: url(/fonts/iranyekan.ttf);
+  src: url(/fonts/iranyekanr.woff);
+  src: url(/fonts/iranyekan.woff2);
+}
 /* desktop small screens */
 @media (1300px>width>=1020px) {
   .header-menu {
