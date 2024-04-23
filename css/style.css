@@ -1,8 +1,8 @@
 @font-face {
  font-family: iranyekan;
-  src: url(/fonts/iranyekan.ttf);
-  src: url(/fonts/iranyekanr.woff);
-  src: url(/fonts/iranyekan.woff2);
+  src: url(fonts/iranyekan.ttf);
+  src: url(fonts/iranyekanr.woff);
+  src: url(fonts/iranyekan.woff2);
 }
 /* prepration */
 html,
@@ -579,7 +579,7 @@ button {
 /* end of special-offers */
 /* super-market-special */
 .super-market-special {
-  background: url(/image/super-market-special-background.svg) left center
+  background: url(image/super-market-special-background.svg) left center
     no-repeat;
   background-color: #eceeec;
   padding: 16px 40px;
