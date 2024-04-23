@@ -1,8 +1,8 @@
 @font-face {
   font-family: Dana;
-  src: url(/fonts/DanaVF.ttf);
-  src: url(/fonts/DanaVF.woff);
-  src: url(/fonts/DanaVF.woff2);
+  src: url(DanaVF.ttf);
+  src: url(DanaVF.woff);
+  src: url(DanaVF.woff2);
 }
 /* prepration */
 html,
