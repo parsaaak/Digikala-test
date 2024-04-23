@@ -1,8 +1,8 @@
 @font-face {
-  font-family: Dana;
-  src: url(DanaVF.ttf);
-  src: url(DanaVF.woff);
-  src: url(DanaVF.woff2);
+ font-family: iranyekan;
+  src: url(/fonts/iranyekan.ttf);
+  src: url(/fonts/iranyekanr.woff);
+  src: url(/fonts/iranyekan.woff2);
 }
 /* prepration */
 html,
@@ -16,7 +16,7 @@ body:root {
 }
 body {
   margin: 0px;
- font-family: Dana;
+ font-family: iranyekan;
 }
 a {
   text-decoration: none;
