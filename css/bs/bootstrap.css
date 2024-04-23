@@ -5599,7 +5599,6 @@ textarea.form-control-lg {
   flex: 1 1 auto;
   padding: var(--bs-modal-padding);
 }
-
 .modal-footer {
   display: flex;
   flex-shrink: 0;
