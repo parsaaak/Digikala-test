@@ -631,6 +631,7 @@ button {
   align-items: center;
   flex-wrap: wrap;
   gap: 15px;
+ padding-bottom: 100px;
 }
 .banner-description img {
   width: 24%;
@@ -639,7 +640,3 @@ button {
 }
 /* end of banner-description */
 
-.end-text {
-  text-align: center;
-  padding-block: 50px;
-}
